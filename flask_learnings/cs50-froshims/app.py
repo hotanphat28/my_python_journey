@@ -5,7 +5,8 @@ from flask import Flask, render_template, request, redirect, session
 app = Flask(__name__)
 
 # Configure session
-app.secret_key = 'my_secret_key'
+app.secret_key = "my_secret_key"
+
 
 # Get data from froshims.db
 def get_data():
@@ -15,12 +16,14 @@ def get_data():
     data = cursor.fetchall()
     return data
 
+
 # Set or insert new data to froshims.db
 def set_data(name, sport):
     db = sqlite3.connect("froshims.db")
     cursor = db.cursor()
     cursor.execute("INSERT INTO registrants (name, sport) VALUES(?, ?)", (name, sport))
     db.commit()
+
 
 # Drop or delete data using id
 def drop_data(id):
@@ -29,12 +32,9 @@ def drop_data(id):
     cursor.execute("DELETE FROM registrants WHERE id = ?", id)
     db.commit()
 
+
 # Define a list of sports
-SPORTS = [
-    "Basketball",
-    "Soccer",
-    "Swimming"
-]
+SPORTS = ["Basketball", "Soccer", "Swimming"]
 
 
 @app.route("/")
@@ -49,7 +49,7 @@ def index():
 def login():
     username = request.form.get("username")
     password = request.form.get("password")
-    
+
     if username == "admin" and password == "admin":
         session["username"] = username
         return redirect("/")
@@ -65,13 +65,13 @@ def logout():
 
 @app.route("/register", methods=["POST"])
 def register():
-    
+
     # Validate submission
     name = request.form.get("name")
     sport = request.form.get("sport")
     if not name or sport not in SPORTS:
         return render_template("failure.html")
-    
+
     # return render_template("success.html")
     set_data(name, sport)
     return redirect("/registrants")
