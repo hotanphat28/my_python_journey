@@ -3,16 +3,22 @@
 *,
 *::after,
 *::before {
-	font-family: 'Kode Mono', monospace;
 	margin: 0;
 	padding: 0;
+	border: none;
+	outline: none;
+	list-style: none;
+	font-family: 'Kode Mono', monospace;
+}
+
+html {
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	overflow-x: hidden;
 }
 
 body {
-	background: #f4f4f4 url('https://images.pexels.com/photos/7991114/pexels-photo-7991114.jpeg')
-		no-repeat fixed center;
-
-	overflow: none;
+	background: #f4f4f4 url('https://images.pexels.com/photos/7991114/pexels-photo-7991114.jpeg') no-repeat fixed center;
 }
 
 .container {
@@ -28,6 +34,10 @@ body {
 .heading {
 	font-size: 10rem;
 	font-weight: 700;
+	color: #f4f4f4;
+}
+
+h1 {
 	color: #f4f4f4;
 }
 
@@ -60,24 +70,22 @@ input {
 	border: 1px solid #242424;
 }
 
-button {
-	background-color: #007bff;
-	color: #f4f4f4;
+button,
+.secondary_button {
 	padding: 10px;
-	border: none;
 	border-radius: 3px;
 	cursor: pointer;
 	font-weight: 500;
 }
 
+button {
+	background-color: #007bff;
+	color: #f4f4f4;
+}
+
 .secondary_button {
 	background-color: lightgrey;
 	color: #242424;
-	padding: 10px;
-	border: none;
-	border-radius: 3px;
-	cursor: pointer;
-	font-weight: 500;
 	text-decoration: none;
 	text-align: center;
 }
