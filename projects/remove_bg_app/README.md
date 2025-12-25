@@ -15,7 +15,7 @@ A simple Python script to remove the background from images using `rembg` and `P
    cd projects/remove_bg_app
    ```
 
-2. Install the required libraries:
+2. Install the required libraries (ensure your virtual environment is active - see root README):
    ```bash
    pip install rembg Pillow
    ```

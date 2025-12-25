@@ -2,13 +2,13 @@ import sys
 import os
 
 # Import modules
-from tutorials import calculation
-from tutorials import coffee_shop_autobot
-from tutorials import get_to_know_you
-from tutorials import show_calendar_in_month
-from tutorials import student_object
-from tutorials import args_demo
-from tutorials import contacts
+from scripts import calculation
+from scripts import coffee_shop_autobot
+from scripts import get_to_know_you
+from scripts import show_calendar_in_month
+from scripts import student_object
+from scripts import args_demo
+from scripts import contacts
 
 def print_menu():
     print("\n--- Python Journey Tutorials ---")

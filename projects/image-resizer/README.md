@@ -34,34 +34,17 @@ Before you run the application, you need to have the following installed:
 - **Python 3.x**: You can download it from [python.org](https://www.python.org/downloads/ "null").
 - **pip**: Python's package installer, which usually comes with Python.
 
-## 🚀 Installation & Setup (Using a Virtual Environment)
+## 🚀 Installation
 
-Using a virtual environment (`venv`) is highly recommended to keep project dependencies isolated.
-
-1. **Clone or Download**: Get the `app.py` file and place it in a new folder on your computer (e.g., `image-resizer-project`).
-2. **Open Your Terminal**: Open a terminal or command prompt and navigate into the folder you just created.
-
-        cd path/to/your/image-resizer-project
-3. **Create the Virtual Environment**: Run the following command to create a virtual environment named `venv`.
-
-        python -m venv venv
-4. **Activate the Virtual Environment**: You must activate the environment before installing packages.
-
-    - **On Windows**:
-
-            venv\Scripts\activate
-    - **On macOS and Linux**:
-
-            source venv/bin/activate
-
-    Your terminal prompt should now change to show `(venv)` at the beginning.
-5. **Install Dependencies**: With the virtual environment active, install the required `Pillow` library.
-
-        pip install Pillow
+1. **Get the Code**: Navigate to the `projects/image-resizer` directory.
+2. **Install Dependencies**: Ensure your virtual environment is active (see root README), then install the required library:
+   ```bash
+   pip install Pillow
+   ```
 
 ## ▶️ How to Run the Application
 
-1. **Activate the Environment**: If it's not already active, navigate to your project folder in the terminal and activate the virtual environment as described in the setup steps.
+1. **Run the App**: Run the following command:
 2. **Run the App**: Once the environment is active, run the following command:
 
         python app.py

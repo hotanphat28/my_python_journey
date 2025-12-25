@@ -28,33 +28,28 @@ A simple web application built with Flask that implements user authentication an
 1. **Clone the repository**
    ```bash
    # If you haven't already
-   cd projects/flask/clone_netflix
+   cd projects/clone_netflix
    ```
 
-2. **Set up a virtual environment**
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install dependencies**
+2. **Install Dependencies**:
+   Navigate to the specific project directory and install the required packages (if a `requirements.txt` is present) or install specific libraries as noted in the project README.
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Initialize the Database**
+3. **Initialize the Database**
    Since migrations are included, upgrade the database to the latest schema:
    ```bash
    flask db upgrade
    ```
 
-5. **Start Redis**
+4. **Start Redis**
    Ensure your Redis server is running, as it is required for rate limiting.
    ```bash
    redis-server
    ```
 
-6. **Run the Application**
+5. **Run the Application**
    ```bash
    python app.py
    ```
