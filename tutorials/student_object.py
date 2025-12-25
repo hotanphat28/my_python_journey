@@ -10,16 +10,21 @@ class Student:
         print("{} - {}".format(self.name, self.id))
 
 
-name = input("What's your name? ")
-student_id = input("What is your current student ID? ")
-student = Student(name, student_id)
-student.print()
 
-change = input("Do you want to change your student ID? (Yes/No) ")
-
-if change == "Yes":
-    student.change_id(input("Enter your new student ID: "))
+def run():
+    name = input("What's your name? ")
+    student_id = input("What is your current student ID? ")
+    student = Student(name, student_id)
     student.print()
-    print("Congrats! You have changed your student ID successfully.")
-else:
-    print("Well, you can continue using your current student ID.")
+
+    change = input("Do you want to change your student ID? (Yes/No) ")
+
+    if change == "Yes":
+        student.change_id(input("Enter your new student ID: "))
+        student.print()
+        print("Congrats! You have changed your student ID successfully.")
+    else:
+        print("Well, you can continue using your current student ID.")
+
+if __name__ == "__main__":
+    run()

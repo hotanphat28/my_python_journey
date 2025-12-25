@@ -1,17 +1,22 @@
 import datetime
 from datetime import datetime
 
-name = input("What's your name? ")
 
-print(f"Hello, {name}! Nice to meet you.")
+def run():
+    name = input("What's your name? ")
 
-current_year = datetime.now().year
+    print(f"Hello, {name}! Nice to meet you.")
 
-born_year = int(input("What year were you born? "))
+    current_year = datetime.now().year
 
-age = current_year - born_year
+    born_year = int(input("What year were you born? "))
 
-if age > 90:
-    print(f"It's shocking to know you are {age} year olds.")
-else:
-    print(f"It's great to know you are {age} year olds.")
+    age = current_year - born_year
+
+    if age > 90:
+        print(f"It's shocking to know you are {age} year olds.")
+    else:
+        print(f"It's great to know you are {age} year olds.")
+
+if __name__ == "__main__":
+    run()

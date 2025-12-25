@@ -27,7 +27,8 @@ def add(scores):
     return total_score
 
 
-if __name__ == "__main__":
+
+def run():
     scores = []
     candidate = int(
         input("Number of candidates: ")
@@ -50,3 +51,7 @@ if __name__ == "__main__":
     # Print the average score of all candidates
     print(f"Average score: {average_score:1.2f}")
     print(f"Total scores: {total_score}")
+
+
+if __name__ == "__main__":
+    run()
