@@ -28,7 +28,7 @@ A simple web application built with Flask that implements user authentication an
 1. **Clone the repository**
    ```bash
    # If you haven't already
-   cd projects/clone_netflix
+   cd projects/flask/clone_netflix
    ```
 
 2. **Set up a virtual environment**
