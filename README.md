@@ -9,8 +9,6 @@ The repository is organized into two main sections:
 ### 1. [Projects](projects/README.md)
 This directory contains larger, standalone applications and tools I have built.
 - **Netflix Clone**: Web applications built with the Flask framework.
-- **Image Resizer**: A web-based tool for resizing and processing images.
-- **Background Remover**: A tool to remove backgrounds from images.
 
 ### 2. [Tutorials](tutorials/README.md)
 This directory contains smaller scripts and exercises, likely covering specific Python concepts or short tasks.
