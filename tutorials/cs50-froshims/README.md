@@ -25,7 +25,7 @@ A web application for registering users for sports events, based on CS50's "Fros
 2. Install Dependencies:
    Navigate to the specific project directory and install the required packages (if a `requirements.txt` is present) or install specific libraries as noted in the project README.
    ```bash
-   pip install Flask
+   pip install Flask Flask-Session
    ```
 
 3. Run the application (ensure your virtual environment is active):

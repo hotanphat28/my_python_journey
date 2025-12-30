@@ -4,14 +4,16 @@ Welcome to "My Python Journey"! This repository documents my progress and projec
 
 ## 📂 Repository Structure
 
-The repository is organized into two main sections:
+The repository is organized into the following sections:
 
-### 1. [Projects](projects/README.md)
-This directory contains larger, standalone applications and tools I have built.
-- **Netflix Clone**: Web applications built with the Flask framework.
+### 1. [Tutorials](tutorials/README.md)
+This directory contains a collection of scripts and web applications:
+- **Scripts**: Interactive CLI tools and exercises (e.g., `coffee_shop_autobot.py`, `contacts.py`).
+- **CS50 Apps**: Web applications built with Flask (e.g., Froshims, Greeting).
+- **CLI Menu**: A `main.py` script to navigate and run the various tutorials.
 
-### 2. [Tutorials](tutorials/README.md)
-This directory contains smaller scripts and exercises, likely covering specific Python concepts or short tasks.
+### 2. Learnings
+- **[learnings.ipynb](learnings.ipynb)**: A Jupyter Notebook where I document my learning progress, notes, and code experiments.
 
 ## ⚙️ Installation & Setup
 
