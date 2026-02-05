@@ -7,7 +7,6 @@ from scripts import coffee_shop_autobot
 from scripts import get_to_know_you
 from scripts import show_calendar_in_month
 from scripts import student_object
-from scripts import args_demo
 from scripts import contacts
 
 def print_menu():
@@ -17,8 +16,7 @@ def print_menu():
     print("3. Get To Know You")
     print("4. Show Calendar")
     print("5. Student Object Demo")
-    print("6. Args Demo")
-    print("7. Contacts App")
+    print("6. Contacts App")
     print("q. Quit")
 
 def run():
@@ -42,13 +40,6 @@ def run():
             print("\n--- Running Student Object Demo ---")
             student_object.run()
         elif choice == '6':
-            print("\n--- Running Args Demo ---")
-            # Args demo expects command line args, we can mock them or just run it
-            # Since it checks sys.argv, it might print the menu again if we don't manipulate it.
-            # For simplicity, we just run it to see what happens, or we could temporarily patch sys.argv
-            print("Running args_demo with current arguments...")
-            args_demo.run()
-        elif choice == '7':
             print("\n--- Running Contacts App ---")
             contacts.run()
         elif choice.lower() == 'q':
